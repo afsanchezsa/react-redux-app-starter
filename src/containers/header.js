@@ -24,8 +24,11 @@ class Header extends Component {
             Form 1
           </Link>
           <Link to='/renderlist' style={{padding: '5px'}}>
-             List
-          </Link>
+            List
+        </Link>
+            <Link to='/hookscontainer' style={{padding: '5px'}}>
+                Hooks Container
+            </Link>
           <Link to='/privateroute' style={{padding: '5px'}}>
             Private Route
           </Link>

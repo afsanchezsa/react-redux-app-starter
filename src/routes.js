@@ -16,7 +16,7 @@ import Home from './functional/home';
 import RenderListItem from './functional/renderlistitem';
 
 import * as ACTIONS from './store/actions/actions';
-
+import HooksContainer1 from "./hooks/hooks_container1";
 import Auth from './utils/auth';
 import AuthCheck from './utils/authcheck';
 import history from './utils/history';
@@ -71,7 +71,7 @@ class Routes extends Component {
             <Route path='/authcheck' render={() => <AuthCheck auth={auth} /> } />
             <Route path='/redirect' component={UnauthRedirect} />
             <Route path='/renderlist' component={RenderList} />
-
+            <Route path='/hookscontainer' component={HooksContainer1} />
             <Route path='/callback' render={(props) => { handleAuthentication(props); return <Callback />}} />
             <Route path="/component1" render={(props) => <Component1 {...props} /> } />
 
